@@ -60,6 +60,7 @@ a{
     font-size: 3rem;
 }
 .main_ul{
+  list-style-type: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,6 +69,7 @@ a{
     font-size: 2rem;
 }
 .second_ul{
+  list-style-type: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -310,10 +312,26 @@ a{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+@media screen and (min-width: 300px) and (max-width: 376px){
+  .social_div{
     flex-direction: column;
     
 }
+
+}
+
+@media screen and (min-width: 377px) and (max-width: 767px){
+  .social_div{
+    flex-direction: column;
+    
+}
+}
 .GMF_anchor{
+
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -321,7 +339,8 @@ a{
     color: white;
 }
 .facebook_anchor{
-    margin-top: 10%;
+ 
+   
     text-decoration: none;
     display: flex;
     justify-content: center;
