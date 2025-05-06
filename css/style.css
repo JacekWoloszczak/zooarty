@@ -41,6 +41,128 @@ a{
     text-align: center;
     padding-bottom: 5%;
 }
+.dog_background{
+  position: relative;
+  background-image: url("../assets/piesek-na-plazy.png");
+  width: 100%;
+  height: 800px;
+  background-position: 20% 30%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.absolute_span{
+  text-transform: uppercase;
+  font-weight: bolder;
+  position: absolute;
+  color: red;
+  font-size: 5em;
+  transform-origin: 50% 100%;
+	transform: perspective(300px) rotateX(25deg);
+}
+
+@media screen and (min-width: 300px) and (max-width: 376px){
+  .dog_background{
+  
+    background-image: url("../assets/piesek-na-plazy.png");
+    width: 100%;
+    height: 300px;
+   
+    background-size:cover;
+    background-repeat: no-repeat;
+  
+    background-attachment:local;
+   
+  }
+}
+@media screen and (min-width: 377px) and (max-width: 767px){
+  .dog_background{
+  
+    background-image: url("../assets/piesek-na-plazy.png");
+    width: 100%;
+    height: 400px;
+   
+    background-size:contain;
+    background-repeat: no-repeat;
+  
+    background-attachment:local;
+  }
+
+}
+.cat_background{
+  position: relative;
+  background-image: url("../assets/kot-lizacy-lape.jpeg");
+  width: 100%;
+  height: 800px;
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+}
+.cat_background> .absolute_span{
+bottom: 5%;
+}
+@media screen and (min-width: 300px) and (max-width: 376px){
+  .cat_background{
+  
+    background-image: url("../assets/kot-lizacy-lape.jpeg");
+    width: 100%;
+    height: 300px;
+   
+   
+  }
+}
+@media screen and (min-width: 377px) and (max-width: 767px){
+  .cat_background{
+  
+    background-image: url("../assets/kot-lizacy-lape.jpeg");
+    width: 100%;
+    height: 400px;
+   
+  
+  }
+
+}
+.dog_contact_background{
+  position: relative;
+  background-image: url("../assets/pies-gryzacy-sznurek.jpg");
+  width: 100%;
+  height: 800px;
+  background-position: 20% 30%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.dog_contact_background>.absolute_span{
+  color: red;
+  transform-origin: 0%;
+	transform: none;
+}
+@media screen and (min-width: 300px) and (max-width: 376px){
+  .dog_conatct_background{
+    background-image: url("../assets/pies-gryzacy-sznurek.jpg");
+    width: 100%;
+    height: 300px;
+   
+    background-size:cover;
+    background-repeat: no-repeat;
+  
+    background-attachment:local;
+   
+  }
+}
+@media screen and (min-width: 377px) and (max-width: 767px){
+  .dog_contact_background{
+  
+    background-image: url("../assets/pies-gryzacy-sznurek.jpg");
+    width: 100%;
+    height: 400px;
+   
+    background-size:contain;
+    background-repeat: no-repeat;
+  
+    background-attachment:local;
+  }
+
+}
 .head_1{
     font-size: 4rem;
     font-weight: bolder;
@@ -49,34 +171,79 @@ a{
     font-style: normal;
 
 }
+@media screen and (min-width: 300px) and (max-width: 376px){
+  .head_1{
+    font-size: 2.7rem;
+  
+  }
+}
+@media screen and (min-width: 377px) and (max-width: 767px){
+  .head_1{
+    font-size: 2.7rem;
+  
+  }
+
+}
 .head_2{
     font-size: 3.5rem;
     font-weight: bolder;
     font-family: "Delius Swash Caps", cursive;
     font-weight: 400;
     font-style: normal;
+    text-transform: uppercase;
+}
+@media screen and (min-width: 300px) and (max-width: 376px){
+  .head_2{
+    font-size: 2.5rem;
+  
+  }
+}
+@media screen and (min-width: 377px) and (max-width: 767px){
+  .head_2{
+    font-size: 2.5rem;
+  
+  }
+
+}
+.head_3{
+  font-size: 3.3rem;
+  font-weight: bolder;
+ 
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
 }
 .text{
     font-size: 3rem;
 }
-.main_ul{
-  list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 3rem;
+.text_snack{
+  font-size: 3rem;
+  line-height: 1.2;
+  width: 100%;
+}
+@media screen and (min-width: 300px) and (max-width: 376px){
+  .text_snack{
     font-size: 2rem;
+    line-height: 1.2;
+    width: 100%;
+  }
 }
-.second_ul{
-  list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 3rem;
-    font-size: 2rem; 
+@media screen and (min-width: 377px) and (max-width: 767px){
+  .text_snack{
+    font-size: 2rem;
+    line-height: 1.2;
+    width: 100%;
+  }
+
 }
+.text-contact{
+  font-size: 3rem;
+  font-weight: bolder;
+  font-family: "Delius Swash Caps", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .where_us_find{
     width: 100%;
     height: auto;
@@ -90,7 +257,7 @@ a{
     background-size:cover;
 }
 .google_map{
-    width: 80%; 
+    width: 100%; 
 
 }
 .main_wrapper_contact{
