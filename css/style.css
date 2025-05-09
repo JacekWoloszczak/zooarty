@@ -87,7 +87,7 @@ padding-top: 5%;
 }
 .dog_background{
   position: relative;
-  background-image: url("../assets/piesek-na-plazy.png");
+  background-image: url("../assets/pies-z-ringo.png");
   width: 100%;
   height: 800px;
   background-position: 20% 30%;
@@ -108,7 +108,7 @@ padding-top: 5%;
 @media screen and (min-width: 300px) and (max-width: 376px){
   .dog_background{
   
-    background-image: url("../assets/piesek-na-plazy.png");
+    background-image: url("../assets/pies-z-ringo.png");
     width: 100%;
     height: 300px;
    
@@ -132,7 +132,7 @@ padding-top: 5%;
 @media screen and (min-width: 377px) and (max-width: 767px){
   .dog_background{
   
-    background-image: url("../assets/piesek-na-plazy.png");
+    background-image: url("../assets/pies-z-ringo.png");
     width: 100%;
     height: 400px;
    
@@ -152,14 +152,22 @@ padding-top: 5%;
     transform: perspective(300px) rotateX(25deg);
   }
 }
+.background{
+  width: 100%;
+  height: 800px;
+  background-size:cover;
+  background-image: url("../assets/background.jpg");
+}
 .cat_background{
   position: relative;
-  background-image: url("../assets/kot-lizacy-lape.jpeg");
+  background-image: url("../assets/kot-lizacy-lape.png");
+ 
   width: 100%;
   height: 800px;
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   
 }
 .cat_background> .absolute_span{
@@ -172,8 +180,12 @@ bottom: 5%;
     width: 100%;
     height: 300px;
     background-size: cover;
-    
+    background-attachment: local;
    
+  }
+  .background{
+background-image: none;
+height: 300px;
   }
 }
 @media screen and (min-width: 377px) and (max-width: 767px){
@@ -183,10 +195,14 @@ bottom: 5%;
     width: 100%;
     height: 400px;
     background-size: cover;
+    background-attachment: local;
     
   
   }
-
+  .background{
+    background-image: none;
+    height: 400px;
+  }
 }
 .dog_contact_background{
   position: relative;
@@ -258,7 +274,7 @@ bottom: 5%;
 .head_2{
     font-size: 3.5rem;
     font-weight: bolder;
-    font-family: "Delius Swash Caps", cursive;
+    font-family: "Jacques Francois", serif;
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
@@ -271,7 +287,7 @@ bottom: 5%;
 }
 @media screen and (min-width: 377px) and (max-width: 767px){
   .head_2{
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   
   }
 
@@ -279,20 +295,20 @@ bottom: 5%;
 .head_3{
   font-size: 3.3rem;
   font-weight: bolder;
-  font-family: "Delius Swash Caps", cursive;
+  font-family: "Jacques Francois", serif;
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
 }
 @media screen and (min-width: 300px) and (max-width: 376px){
   .head_3{
-    font-size: 2.2rem;
+    font-size: 2.1rem;
   
   }
 }
 @media screen and (min-width: 377px) and (max-width: 767px){
   .head_3{
-    font-size: 2.2rem;
+    font-size: 2.1rem;
   
   }
 
@@ -338,7 +354,7 @@ bottom: 5%;
 .text-contact{
   font-size: 3rem;
   font-weight: bolder;
-  font-family: "Delius Swash Caps", cursive;
+  font-family: "Jacques Francois", serif;
   font-weight: 400;
   font-style: normal;
 }
