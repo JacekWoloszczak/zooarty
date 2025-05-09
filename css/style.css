@@ -611,6 +611,9 @@ height: 300px;
     gap: 20px;
     
 }
+.social_div > a{
+  color:#171616;
+}
 @media screen and (min-width: 300px) and (max-width: 376px){
   .social_div{
     flex-direction: column;
