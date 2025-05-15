@@ -11,6 +11,16 @@ html, body{
 a{
     color: black;
 }
+a:hover{
+  color: goldenrod;
+}
+.prenavigation_anchor{
+  color: white;
+  text-decoration: none;
+}
+.prenavigation_anchor:hover{
+color: goldenrod;
+}
 .header_wrapper{
   position: relative;
     width: 100%;
@@ -31,16 +41,33 @@ a{
   padding-bottom: 1%;
   gap: 30px;
 }
+
+.prenavigation_information_list{
+  gap: 20px;
+  color:#171616;
+}
+.prenavigation_list-element:hover{
+   color: goldenrod;
+}
 .header_icons_mobile{
   display: none;
   background-color: #171616;
   color: white;
   text-align: center;
   padding-bottom: 2%;
+
 }
 
 .text_social_mobile{
   font-size: 1.4rem;
+}
+.prenavigation_information_list_mobile{
+ list-style-type: none;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: flex-start;
+ gap: 20px;
 }
 @media screen and (min-width: 300px) and (max-width: 376px){
   .header_icons_mobile{
@@ -169,11 +196,67 @@ padding-top: 5%;
   position: absolute;
   left: 30%;
   color: red;
+  text-decoration-style: solid;
   font-size: 5em;
   transform-origin: 50% 100%;
 	transform: perspective(300px) rotateX(25deg);
 }
+.fixed_container_phone{
+  border-radius: 50%;
+  border: 5px solid #171616;
+  /* padding: 1.8%; */
+  background-color: orange;
+  position: fixed;
+ width: 80px;
+ height: 80px;
+  top: 10%;
+  right: 0.5%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fixed_container{
+ border: 5px solid #171616;
+ width: 80px;
+ height: 80px;
+  border-radius: 50%;
+  /* padding: 2%; */
+  background-color: orange;
+  position: fixed;
+  top: 28%;
+  right: 0.5%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fixed_container>a>img{
+  width: 60px;
+  height: 60px;
+}
+@media screen and (min-width: 300px) and (max-width: 767px){
+ .fixed_container_phone{
+width: 60px;
+    height: 60px;
+ }
+  .fixed_container_phone>a>img{
+      width: 32px;
+  height: 32px; 
+  }
+  .fixed_container{
+    top: 22%;
+    width: 60px;
+    height: 60px;
+    
+  
+  }
+.fixed_container>a>img{
 
+  width: 40px;
+  height: 40px; 
+}
+}
 @media screen and (min-width: 300px) and (max-width: 376px){
   .dog_background{
   
