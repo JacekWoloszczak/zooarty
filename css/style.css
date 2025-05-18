@@ -193,13 +193,11 @@ padding-top: 5%;
 .absolute_span{
   text-transform: uppercase;
   font-weight: bolder;
-  position: absolute;
-  left: 30%;
+  
   color: red;
   text-decoration-style: solid;
-  font-size: 5em;
-  transform-origin: 50% 100%;
-	transform: perspective(300px) rotateX(25deg);
+  font-size: 3em;
+
 }
 .fixed_container_phone{
   border-radius: 50%;
@@ -246,6 +244,52 @@ width: 60px;
   }
   .fixed_container{
     top: 22%;
+    width: 60px;
+    height: 60px;
+    
+  
+  }
+.fixed_container>a>img{
+
+  width: 40px;
+  height: 40px; 
+}
+}
+@media screen and (width: 1024px) and (height: 1366px){
+ .fixed_container_phone{
+width: 60px;
+    height: 60px;
+    right: 8%;
+ }
+  .fixed_container_phone>a>img{
+      width: 32px;
+  height: 32px; 
+  }
+  .fixed_container{
+    top: 22%;
+    right: 8%;
+    width: 60px;
+    height: 60px;
+    
+  
+  }
+.fixed_container>a>img{
+
+  width: 40px;
+  height: 40px; 
+}
+}
+@media screen and (orientation:landscape) and (min-width: 300px) and (max-width: 767px){
+ .fixed_container_phone{
+width: 60px;
+    height: 60px;
+ }
+  .fixed_container_phone>a>img{
+      width: 32px;
+  height: 32px; 
+  }
+  .fixed_container{
+    top: 30%;
     width: 60px;
     height: 60px;
     
@@ -321,11 +365,64 @@ width: 60px;
   background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  position: relative;
   
 }
-.cat_background> .absolute_span{
-bottom: 5%;
+.circle_thinking{
+  width: 3%;
+height: 5%;
+border-radius: 50%;
+background-color: white;
+position: absolute;
+right: 25%;
+top: 15%;
+border: 2px solid black;
 }
+.circle_smaller{
+width: 5%;
+height: 8%;
+border-radius: 50%;
+background-color: white;
+position: absolute;
+right: 20%;
+top: 20%;
+border: 2px solid black;
+}
+.circle_small{
+  width: 7%;
+height: 10%;
+border-radius: 50%;
+background-color: white;
+position: absolute;
+right: 15%;
+top: 30%;
+border: 2px solid black;
+}
+.circle_medium{
+    width: 9%;
+height: 12%;
+border-radius: 50%;
+background-color: white;
+position: absolute;
+right: 15%;
+top: 45%;
+border: 2px solid black;
+}
+.circle_text_div{
+    width: 35%;
+height: 37%;
+border-radius: 50%;
+background-color: white;
+position: absolute;
+right: 15%;
+top: 55%;
+border: 2px solid black;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
 @media screen and (min-width: 300px) and (max-width: 376px){
   .cat_background{
   
@@ -341,6 +438,41 @@ bottom: 5%;
 background-image: none;
 height: 300px;
   }
+  .circle_thinking{
+  width: 10%;
+height: 12%;
+right: 12%;
+top: 35%
+
+}
+.circle_smaller{
+width: 12%;
+height: 14%;
+border-radius: 50%;
+background-color: white;
+position: absolute;
+right: 12%;
+top: 50%;
+border: 2px solid black;
+}
+.circle_small{
+display: none;
+}
+.circle_medium{
+    width: 14%;
+height: 16%;
+top: 65%;
+right: 15%;
+}
+.circle_text_div{
+    width: 80%;
+height: 50%;
+border-radius: 50%;
+top: 75%;
+}
+.circle_text_div>.absolute_span{
+  right: 8%;
+}
 }
 @media screen and (min-width: 377px) and (max-width: 767px){
   .cat_background{
@@ -351,12 +483,286 @@ height: 300px;
     background-size: cover;
     background-attachment: local;
     
+    
   
   }
   .background{
     background-image: none;
     height: 400px;
   }
+    .circle_thinking{
+  width: 10%;
+height: 12%;
+right: 12%;
+top: 35%
+
+}
+.circle_smaller{
+width: 12%;
+height: 14%;
+border-radius: 50%;
+background-color: white;
+position: absolute;
+right: 12%;
+top: 50%;
+border: 2px solid black;
+}
+.circle_small{
+display: none;
+}
+.circle_medium{
+    width: 14%;
+height: 16%;
+top: 65%;
+right: 15%;
+}
+.circle_text_div{
+    width: 80%;
+height: 50%;
+border-radius: 50%;
+top: 75%;
+}
+.circle_text_div>.absolute_span{
+  right: 8%;
+}
+}
+@media screen and (width: 820px) and (height: 1180px){
+  .cat_background{
+   
+    background-image: url("../assets/kot-lizacy-lape.jpeg");
+    width: 70%;
+    height: 100%;
+    margin-left: 10%;
+   
+    background-size: cover;
+    background-attachment: local;
+    
+  
+  }
+.circle_thinking{
+  width: 7%;
+height: 6%;
+right: 12%;
+top: 35%
+
+}
+.circle_smaller{
+width: 8%;
+height: 7%;
+border-radius: 50%;
+background-color: white;
+position: absolute;
+right: 12%;
+top: 45%;
+border: 2px solid black;
+}
+.circle_small{
+width: 9%;
+height: 8%;
+top: 55%;
+}
+.circle_medium{
+display: none;
+}
+.circle_text_div{
+
+width: 50%;
+height: 60%;
+top: 65%;
+}
+}
+@media screen and (width: 768px) and (height: 1024px){
+  .cat_background{
+   
+    background-image: url("../assets/kot-lizacy-lape.jpeg");
+    width: 70%;
+    height: 100%;
+    margin-left: 15%;
+   
+    background-size: cover;
+    background-attachment: local;
+    
+  
+  }
+.circle_thinking{
+  width: 7%;
+height: 6%;
+right: 12%;
+top: 35%
+
+}
+.circle_smaller{
+width: 8%;
+height: 7%;
+border-radius: 50%;
+background-color: white;
+position: absolute;
+right: 12%;
+top: 45%;
+border: 2px solid black;
+}
+.circle_small{
+width: 9%;
+height: 8%;
+top: 55%;
+}
+.circle_medium{
+display: none;
+}
+.circle_text_div{
+
+width: 50%;
+height: 60%;
+top: 65%;
+}
+}
+@media screen and (width: 1024px) and (height: 1366px){
+  .cat_background{
+   
+    background-image: url("../assets/kot-lizacy-lape.jpeg");
+    width: 70%;
+    height: 100%;
+    margin-left: 15%;
+   
+    background-size: cover;
+    background-attachment: local;
+    
+  
+  }
+.circle_thinking{
+  width: 7%;
+height: 6%;
+right: 12%;
+top: 35%
+
+}
+.circle_smaller{
+width: 8%;
+height: 7%;
+border-radius: 50%;
+background-color: white;
+position: absolute;
+right: 12%;
+top: 45%;
+border: 2px solid black;
+}
+.circle_small{
+width: 9%;
+height: 8%;
+top: 55%;
+}
+.circle_medium{
+display: none;
+}
+.circle_text_div{
+
+width: 50%;
+height: 40%;
+top: 65%;
+}
+}
+@media screen and (width: 912px) and (height: 1368px){
+  .cat_background{
+   
+    background-image: url("../assets/kot-lizacy-lape.jpeg");
+    width: 70%;
+    height: 100%;
+    margin-left: 15%;
+   
+    background-size: cover;
+    background-attachment: local;
+    
+  
+  }
+.circle_thinking{
+  width: 7%;
+height: 6%;
+right: 12%;
+top: 35%
+
+}
+.circle_smaller{
+width: 8%;
+height: 7%;
+border-radius: 50%;
+background-color: white;
+position: absolute;
+right: 12%;
+top: 45%;
+border: 2px solid black;
+}
+.circle_small{
+width: 9%;
+height: 8%;
+top: 55%;
+}
+.circle_medium{
+display: none;
+}
+.circle_text_div{
+
+width: 50%;
+height: 40%;
+top: 65%;
+}
+}
+@media screen and (width: 853px) and (height: 1280px){
+  .cat_background{
+   
+    background-image: url("../assets/kot-lizacy-lape.jpeg");
+    width: 70%;
+    height: 100%;
+    margin-left: 15%;
+   
+    background-size: cover;
+    background-attachment: local;
+    
+  
+  }
+.circle_thinking{
+  width: 7%;
+height: 6%;
+right: 12%;
+top: 35%
+
+}
+.circle_smaller{
+width: 8%;
+height: 7%;
+border-radius: 50%;
+background-color: white;
+position: absolute;
+right: 12%;
+top: 45%;
+border: 2px solid black;
+}
+.circle_small{
+width: 9%;
+height: 8%;
+top: 55%;
+}
+.circle_medium{
+display: none;
+}
+.circle_text_div{
+
+width: 50%;
+height: 40%;
+top: 65%;
+}
+}
+@media screen and (min-width: 767px) and (max-width: 1023px){
+  .circle_text_div{
+    width: 50%;
+height: 25%;
+border-radius: 50%;
+top: 65%;
+right: 8%;
+}
+.circle_text_div>.absolute_span{
+  right: 8%;
+  font-size: 2em;
+}
 }
 .dog_contact_background{
   position: relative;
@@ -367,11 +773,7 @@ height: 300px;
   background-size: cover;
   background-attachment: fixed;
 }
-.dog_contact_background>.absolute_span{
-  color: red;
-  transform-origin: 0%;
-	transform: none;
-}
+
 @media screen and (min-width: 300px) and (max-width: 376px){
   .dog_contact_background{
     background-image: url("../assets/pies-gryzacy-sznurek.jpg");
@@ -383,9 +785,7 @@ height: 300px;
   
     background-attachment:local;
   }
-  .dog_contact_background>.absolute_span{
-    display: none;
-  }
+ 
 }
 
 @media screen and (min-width: 377px) and (max-width: 767px){
@@ -400,10 +800,8 @@ height: 300px;
   
     background-attachment:local;
   }
-  .dog_contact_background>.absolute_span{
-    display: none;
   }
-}
+
 .head_1{
     font-size: 4rem;
     font-weight: bolder;
@@ -457,12 +855,14 @@ height: 300px;
 @media screen and (min-width: 300px) and (max-width: 376px){
   .head_3{
     font-size: 2rem;
+    margin-top: 25%;
   
   }
 }
 @media screen and (min-width: 377px) and (max-width: 767px){
   .head_3{
     font-size: 2rem;
+    margin-top: 25%;
   
   }
 
@@ -764,6 +1164,9 @@ height: 300px;
 }
 .social_div > a{
   color:#171616;
+}
+.social_div>a>p{
+  margin-left: 10px;
 }
 @media screen and (min-width: 300px) and (max-width: 376px){
   .social_div{
