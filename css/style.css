@@ -194,7 +194,10 @@ padding-top: 5%;
   text-transform: uppercase;
   font-weight: bolder;
   
-  color: red;
+   color:#171616;
+    font-size: 2rem;
+    font-family: monospace;
+   
   text-decoration-style: solid;
   font-size: 3em;
 
@@ -207,12 +210,15 @@ padding-top: 5%;
   position: fixed;
  width: 80px;
  height: 80px;
-  top: 10%;
-  right: 0.5%;
+  top: 10vh;
+  right: 1.5%;
   z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.fixed_container_phone:hover{
+  transform: scale(1.2)
 }
 .fixed_container{
  border: 5px solid #171616;
@@ -222,12 +228,15 @@ padding-top: 5%;
   /* padding: 2%; */
   background-color: orange;
   position: fixed;
-  top: 28%;
-  right: 0.5%;
+  top: 28vh;
+  right: 1.5%;
   z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.fixed_container:hover{
+  transform: scale(1.2)
 }
 .fixed_container>a>img{
   width: 60px;
@@ -243,7 +252,7 @@ width: 60px;
   height: 32px; 
   }
   .fixed_container{
-    top: 22%;
+    top: 22vh;
     width: 60px;
     height: 60px;
     
@@ -266,7 +275,7 @@ width: 60px;
   height: 32px; 
   }
   .fixed_container{
-    top: 22%;
+    top: 22vh;
     right: 8%;
     width: 60px;
     height: 60px;
@@ -289,7 +298,7 @@ width: 60px;
   height: 32px; 
   }
   .fixed_container{
-    top: 30%;
+    top: 30vh;
     width: 60px;
     height: 60px;
     
@@ -319,10 +328,7 @@ width: 60px;
     font-weight: bolder;
     position: absolute;
     right: 35%;
-    color: red;
-    font-size: 2rem;
-    transform-origin: 50% 100%;
-    transform: perspective(300px) rotateX(25deg);
+   
   }
 }
 @media screen and (min-width: 377px) and (max-width: 767px){
@@ -342,10 +348,9 @@ width: 60px;
     font-weight: bolder;
     position: absolute;
     right: 30%;
-    color: red;
+
     font-size: 2rem;
-    transform-origin: 50% 100%;
-    transform: perspective(300px) rotateX(25deg);
+
   }
 }
 
@@ -409,8 +414,8 @@ top: 45%;
 border: 2px solid black;
 }
 .circle_text_div{
-    width: 35%;
-height: 37%;
+    width: 25%;
+height: 23%;
 border-radius: 50%;
 background-color: white;
 position: absolute;
@@ -422,7 +427,12 @@ justify-content: center;
 align-items: center;
 text-align: center;
 }
-
+@media (hover: none) and (pointer: coarse) {
+  .cat_background {
+    background-attachment: scroll;
+  }
+}
+/* }-bardzo ważny kod */
 @media screen and (min-width: 300px) and (max-width: 376px){
   .cat_background{
   
@@ -517,7 +527,7 @@ top: 65%;
 right: 15%;
 }
 .circle_text_div{
-    width: 80%;
+    width: 60%;
 height: 50%;
 border-radius: 50%;
 top: 75%;
@@ -530,12 +540,12 @@ top: 75%;
   .cat_background{
    
     background-image: url("../assets/kot-lizacy-lape.jpeg");
-    width: 70%;
+    width: 60%;
     height: 100%;
-    margin-left: 10%;
+   margin-left: 25%;
    
     background-size: cover;
-    background-attachment: local;
+    background-attachment: none;
     
   
   }
@@ -566,8 +576,8 @@ display: none;
 }
 .circle_text_div{
 
-width: 50%;
-height: 60%;
+width: 40%;
+height: 35%;
 top: 65%;
 }
 }
@@ -611,8 +621,8 @@ display: none;
 }
 .circle_text_div{
 
-width: 50%;
-height: 60%;
+width: 40%;
+height: 35%;
 top: 65%;
 }
 }
