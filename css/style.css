@@ -14,6 +14,7 @@ a{
 a:hover{
   color: goldenrod;
 }
+
 .prenavigation_anchor{
   color: white;
   text-decoration: none;
@@ -30,6 +31,14 @@ color: goldenrod;
     justify-content: center;
     align-items: center;
     padding-top: 0%;
+}
+.header_wrapper > a{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
 }
 .header_icons{
   background-color: #171616;
@@ -138,6 +147,29 @@ padding-top: 5%;
     fill: black;
     width: 40%;
     height: auto;
+  
+
+}
+.logo_law{
+      fill: black;
+  width: 100%;
+
+}
+.cloud{
+  position: relative;
+}
+.cloud:hover::after{
+  content: "kliknij, aby wrócić na stronę główną";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background-color: white;
+  position: absolute;
+  width: 60%;
+  bottom: 10px;
+  right: -10px;
+
 }
 .logo_description{
     font-size: 4rem;
@@ -145,6 +177,7 @@ padding-top: 5%;
     font-family: "Delius Swash Caps", cursive;
     font-weight: 400;
     font-style: normal;
+ 
 }
 .main_wrapper{
     width: 100%;
@@ -1164,6 +1197,10 @@ right: 8%;
    width: 40%;
    height: auto;
   }
+  .footer_logo-law{
+    width: 100%;
+
+  }
 .social_div{
     display: flex;
     justify-content: flex-start;
@@ -1240,3 +1277,14 @@ right: 8%;
   }
 }
 
+.main_wrapper-law{
+  display: flex;
+  justify-content: flex-start;
+}
+.text_law{
+  width: 80%;
+  line-height: 1.4;
+  font-size: 20px;
+  margin-left: 5%;
+
+}
