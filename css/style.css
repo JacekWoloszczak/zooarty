@@ -79,6 +79,9 @@ color: goldenrod;
  gap: 20px;
 }
 @media screen and (min-width: 300px) and (max-width: 376px){
+  .header_wrapper{
+    padding-bottom: 5%;
+  }
   .header_icons_mobile{
       display: flex;
       flex-direction: column;
@@ -95,6 +98,9 @@ color: goldenrod;
 }
 }
 @media screen and (min-width: 377px) and (max-width: 767px){
+  .header_wrapper{
+    padding-bottom: 5%;
+  }
   .header_icons_mobile{
      display: flex;
       flex-direction: column;
@@ -221,7 +227,7 @@ padding-top: 5%;
   height: 800px;
   background-position: 20% 30%;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 .absolute_span{
   text-transform: uppercase;
@@ -402,7 +408,7 @@ width: 60px;
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   position: relative;
   
 }
@@ -508,10 +514,11 @@ top: 65%;
 right: 15%;
 }
 .circle_text_div{
-    width: 80%;
+    width: 90%;
 height: 50%;
 border-radius: 50%;
 top: 75%;
+margin-left: 12%;
 }
 .circle_text_div>.absolute_span{
   right: 8%;
@@ -811,10 +818,10 @@ right: 8%;
   position: relative;
   background-image: url("../assets/pies-gryzacy-sznurek.jpg");
   width: 100%;
-  height: 800px;
+  height: 1000px;
   background-position: 20% 30%;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 
 @media screen and (min-width: 300px) and (max-width: 376px){
@@ -1214,6 +1221,7 @@ right: 8%;
 }
 .social_div>a>p{
   margin-left: 10px;
+  font-weight: bold;
 }
 @media screen and (min-width: 300px) and (max-width: 376px){
   .social_div{
@@ -1237,6 +1245,9 @@ right: 8%;
     align-items: center;
     color: white;
 }
+.GMF_anchor:hover{
+   color: goldenrod;
+}
 .facebook_anchor{
  
 
@@ -1246,12 +1257,18 @@ right: 8%;
     align-items: center;
     color: white;
 }
+.facebook_anchor:hover{
+  color: goldenrod;
+}
 .insta_anchor{
   text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
+}
+.insta_anchor:hover{
+color: goldenrod;
 }
 .we_aproved{
   width: 100%;
